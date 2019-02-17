@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kurniad-sign/fylo-landing-page-challange/issues"
   },
-  "homepage": "https://github.com/kurniad-sign/fylo-landing-page-challange#readme"
+  "homepage": "https://github.com/kurniad-sign/fylo-landing-page-challange#readme",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
