@@ -14,38 +14,41 @@
 			rel="stylesheet"
 		/>
 		<link
-			href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway"
+			href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="./css/style.css" />
 		<title>Fylo | Sign up split layout Challenge</title>
 	</head>
 	<body>
 		<!-- === 👉 Header Section 👈 === -->
-		<header class="fy-NavHeader" role="navigation">
+		<header class="fy-NavHeader de-Hidden" role="navigation">
 			<nav class="fy-Nav">
-				<div class="fy-Nav-logo">
-					<a href="#">
-						<img src="./images/logo.svg" alt="Fylo Logo" />
-					</a>
-				</div>
-				<div class="fy-Main-Nav">
-					<ul class="fy-Nav-list">
-						<li class="fy-Nav-item">
-							<a href="#">
-								<i class="icon ion-logo-twitter"></i>
-							</a>
-						</li>
-						<li class="fy-Nav-item">
-							<a href="#">
-								<i class="icon ion-logo-facebook"></i>
-							</a>
-						</li>
-						<li class="fy-Nav-item">
-							<a href="#">
-								<i class="icon ion-md-mail"></i>
-							</a>
-						</li>
-					</ul>
+				<div class="fy-container fy-MainNav">
+					<div class="fy-Nav-logo fy-u-flexCentered">
+						<a href="#">
+							<img src="./images/logo.svg" />
+						</a>
+					</div>
+					<div class="fy-Main-Nav fy-u-flexCentered">
+						<ul class="fy-Nav-list">
+							<li class="fy-Nav-item">
+								<a href="#">
+									<i class="icon ion-logo-twitter"></i>
+								</a>
+							</li>
+							<li class="fy-Nav-item">
+								<a href="#">
+									<i class="icon ion-logo-facebook"></i>
+								</a>
+							</li>
+							<li class="fy-Nav-item">
+								<a href="#">
+									<i class="icon ion-md-mail"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 		</header>
@@ -56,34 +59,79 @@
 				<img src="./images/illustration-main.svg" alt="Ilustration" />
 			</section>
 			<section class="fy-Hero">
-				<h1 class="fy-Hero-heading">
-					All your files in one secure location, accessible anywhere
-				</h1>
+				<header class="fy-NavHeader mo-Hidden" role="navigation">
+					<nav class="fy-Nav">
+						<div class="fy-container fy-MainNav">
+							<div class="fy-Nav-logo fy-u-flexCentered">
+								<a href="#">
+									<img src="./images/logo.svg" />
+								</a>
+							</div>
+							<div class="fy-Main-Nav fy-u-flexCentered">
+								<ul class="fy-Nav-list">
+									<li class="fy-Nav-item">
+										<a href="#">
+											<i class="icon ion-logo-twitter"></i>
+										</a>
+									</li>
+									<li class="fy-Nav-item">
+										<a href="#">
+											<i class="icon ion-logo-facebook"></i>
+										</a>
+									</li>
+									<li class="fy-Nav-item">
+										<a href="#">
+											<i class="icon ion-md-mail"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</header>
+				<div class="fy-container de-grid">
+					<div class="fy-cta-Header">
+						<h1 class="fy-Hero-heading">
+							All your files in one secure location, accessible anywhere
+						</h1>
 
-				<p class="fy-Hero-description">
-					Fylo stores all your most important files in one secure location.
-					Access them wherever you need, share and collaborate with, friends,
-					family and co-workers.
-				</p>
-				<form class="fy-signForm" id="signUp">
-					<label for="signup">Sign up for early access</label>
-					<input
-						type="text"
-						name="signup"
-						id="signuUpText"
-						placeholder="Enter Your email Here"
-						class="fy-signForm-text"
-					/>
-					<button type="submit" class="fy-Button Button--primary">
-						Sign Up
-					</button>
-				</form>
+						<p class="fy-Hero-description">
+							Fylo stores all your most important files in one secure location.
+							Access them wherever you need, share and collaborate with,
+							friends, family and co-workers.
+						</p>
+					</div>
+					<div class="fy-signForm">
+						<form id="signUp">
+							<label for="signup" class="label__title"
+								>Sign up for early access</label
+							>
+							<input
+								type="text"
+								name="signup"
+								id="signuUpText"
+								placeholder="Enter Your email Here"
+								class="fy-signForm-text"
+							/>
+							<button type="submit" class="fy-Button Button--primary">
+								Sign Up
+							</button>
+						</form>
+					</div>
+				</div>
+				<footer class="fy-Footer mo-Hidden">
+					<div class="fy-container">
+						<a href="#">Privacy Policy</a>
+					</div>
+				</footer>
 			</section>
 		</main>
 
 		<!-- === 👉 Footer Section 👈 === -->
-		<footer class="fy-Footer">
-			<a href="#">Privacy Policy</a>
+		<footer class="fy-Footer de-Hidden">
+			<div class="fy-container">
+				<a href="#">Privacy Policy</a>
+			</div>
 		</footer>
 	</body>
 </html>
