@@ -1,36 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<link
+			href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./css/style.min.css" />
+		<title>Fylo | Sign up split layout Challenge</title>
+	</head>
+	<body>
+		<!-- === 👉 Header Section 👈 === -->
+		<header class="fy-NavHeader de-Hidden" role="navigation">
+			<nav class="fy-Nav">
+				<div class="fy-container fy-MainNav">
+					<div class="fy-Nav-logo fy-u-flexCentered">
+						<a href="#">
+							<img src="./images/logo.svg" />
+						</a>
+					</div>
+					<div class="fy-Main-Nav fy-u-flexCentered">
+						<ul class="fy-Nav-list">
+							<li class="fy-Nav-item">
+								<a href="#">
+									<i class="icon ion-logo-twitter"></i>
+								</a>
+							</li>
+							<li class="fy-Nav-item">
+								<a href="#">
+									<i class="icon ion-logo-facebook"></i>
+								</a>
+							</li>
+							<li class="fy-Nav-item">
+								<a href="#">
+									<i class="icon ion-md-mail"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Beta sign up split layout Challenge</title>
+		<!-- === 👉 Main Section 👈 === -->
+		<main role="main">
+			<section class="fy-ImgBackground">
+				<img src="./images/illustration-main.svg" alt="Ilustration" />
+			</section>
+			<section class="fy-Hero">
+				<header class="fy-NavHeader mo-Hidden" role="navigation">
+					<nav class="fy-Nav">
+						<div class="fy-container fy-MainNav">
+							<div class="fy-Nav-logo fy-u-flexCentered">
+								<a href="#">
+									<img src="./images/logo.svg" />
+								</a>
+							</div>
+							<div class="fy-Main-Nav fy-u-flexCentered">
+								<ul class="fy-Nav-list">
+									<li class="fy-Nav-item">
+										<a href="#">
+											<i class="icon ion-logo-twitter"></i>
+										</a>
+									</li>
+									<li class="fy-Nav-item">
+										<a href="#">
+											<i class="icon ion-logo-facebook"></i>
+										</a>
+									</li>
+									<li class="fy-Nav-item">
+										<a href="#">
+											<i class="icon ion-md-mail"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</nav>
+				</header>
+				<div class="fy-container de-grid">
+					<div class="fy-cta-Header">
+						<h1 class="fy-Hero-heading">
+							All your files in one secure location, accessible anywhere
+						</h1>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  All your files in one secure location, accessible anywhere.
+						<p class="fy-Hero-description">
+							Fylo stores all your most important files in one secure location.
+							Access them wherever you need, share and collaborate with,
+							friends, family and co-workers.
+						</p>
+					</div>
+					<div class="fy-signForm">
+						<form id="signUp">
+							<label for="signup" class="label__title"
+								>Sign up for early access</label
+							>
+							<input
+								type="text"
+								name="signup"
+								id="signuUpText"
+								placeholder="Enter Your email Here"
+								class="fy-signForm-text"
+							/>
+							<button type="submit" class="fy-Button Button--primary">
+								Sign Up
+							</button>
+						</form>
+					</div>
+				</div>
+				<footer class="fy-Footer mo-Hidden">
+					<div class="fy-container">
+						<a href="#">Privacy Policy</a>
+					</div>
+				</footer>
+			</section>
+		</main>
 
-  Fylo stores all your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family and co-workers.
-
-  Sign up for early access
-
-  Sign Up
-
-  Privacy Policy
-
-  <footer>
-    <p class="attribution">
-      This page started life as a challenge on <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a> 🎉
-    </p>
-  </footer>
-</body>
+		<!-- === 👉 Footer Section 👈 === -->
+		<footer class="fy-Footer de-Hidden">
+			<div class="fy-container">
+				<a href="#">Privacy Policy</a>
+			</div>
+		</footer>
+	</body>
 </html>
