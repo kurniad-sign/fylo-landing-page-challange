@@ -4,8 +4,13 @@
   "description": "FYLO Landing Page - Sign Up Split Layout Challang from Frontend Mentor",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d dist",
-    "css-watch": "node-sass scss/style.scss dist/css/style.css --watch"
+    "build": "npm run css-clean && npm run css-build && npm run css-autoprefixer && npm run css-clearcss",
+    "css-autoprefixer": "postcss --use autoprefixer --map false --output dist/css/style.css dist/css/style.css",
+    "css-build": "node-sass --source-map true --output-style expanded scss/style.scss dist/css/style.css",
+    "css-clean": "rimraf dist/css",
+    "css-clearcss": "cleancss -o dist/css/style.min.css dist/css/style.css",
+    "start": "node-sass scss/style.scss dist/css/style.css --watch",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -16,11 +21,20 @@
   "bugs": {
     "url": "https://github.com/kurniad-sign/fylo-landing-page-challange/issues"
   },
-  "homepage": "https://fylo.github.io/fylo-landing-page-challange",
+  "homepage": "https://kurniad-sign.github.io/fylo-landing-page-challange/",
   "devDependencies": {
-    "gh-pages": "^2.0.1"
+    "autoprefixer": "^9.4.8",
+    "clean-css-cli": "^4.2.1",
+    "gh-pages": "^2.0.1",
+    "rimraf": "^2.6.3"
   },
   "dependencies": {
-    "node-sass": "^4.11.0"
-  }
+    "node-sass": "^4.11.0",
+    "postcss": "^7.0.14",
+    "postcss-cli": "^6.1.2"
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 2%"
+  ]
 }
